@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>trabajo fip accuamusic</title>
 </head>
+
 <body>
   <header>
     <h1>
@@ -13,16 +15,34 @@
     </h1>
   </header>
   <div>
-    <div>
-      <img src="" alt="">
+    <h2>Elija su playlist</h2>
+  <!-- revisar los id ESTAN MAL -->
+    <div id="imagenDePlaylist">
+      <div>
+        <img src="src/tormenta.jpg" alt="" id="imagenLluvioso">
+        <button id="btnPlaylist" value="lluvioso">Lluvioso</button>
+      </div>
+      <div>
+        <img src="src/soleado.jpg" alt="" id="imagenDePlaylist">
+        <button id="btnPlaylist" value="soleadobtn">Soleado</button>
+      </div>
+      <div>
+        <img src="src/ventoso.jpg" alt="" id="imagenDePlaylist">
+        <button id="ventosobtn">Ventoso</button>
+      </div>
+      <div>
+        <img src="src/nieve.jpg" alt="imagen de nieve" id="imagenDePlaylist">
+        <button id="nieve-friobtn">Nieve/frio</button>
+    </div>
+      <!-- <img id="imagenDePlaylist" src="src/soleado.jpg" alt="Portada de playlist" class="playlist-img"> -->
       <audio id="audioplayer" controls></audio>
       <div>
         <button onclick="playPrev()">⏮️ Anterior</button>
         <button onclick="playNext()">⏭️ Siguiente</button>
       </div>
-    </div>
   </div>
   <footer>11/09/2025 derechos reservados: Bruno Arenzana, Juan Bayugar, Nahuel Seguel<footer>
-  <script src="main.js"></script>
+      <script src="main.js"></script>
 </body>
+
 </html>
