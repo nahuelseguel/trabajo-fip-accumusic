@@ -14,9 +14,9 @@
       Accuamusic
     </h1>
   </header>
-  <div>
+  <!--<div>
     <h2>Elija su playlist</h2>
-  <!-- revisar los id ESTAN MAL -->
+   revisar los id ESTAN MAL
     <div id="imagenDePlaylist">
       <div>
         <img src="src/tormenta.jpg" alt="" id="imagenLluvioso">
@@ -34,8 +34,37 @@
         <img src="src/nieve.jpg" alt="imagen de nieve" id="imagenDePlaylist">
         <button id="nieve-friobtn">Nieve/frio</button>
     </div>
-      <!-- <img id="imagenDePlaylist" src="src/soleado.jpg" alt="Portada de playlist" class="playlist-img"> -->
-      <audio id="audioplayer" controls></audio>
+       <img id="imagenDePlaylist" src="src/soleado.jpg" alt="Portada de playlist" class="playlist-img">
+      <audio id="audioplayer" controls></audio>-->
+      <body>
+
+   <button class="btn-playlist" data-playlist="Lluvioso">
+    <img src="src/tormenta.jpg" alt="Imagen de tormenta">
+    Lluvioso
+  </button>
+    <button class="btn-playlist" data-playlist="Soleado">
+    <img src="src/soleado.jpg" alt="Imagen de clima soleado">
+    Soleado
+  </button>
+    <button class="btn-playlist" data-playlist="Ventoso">
+    <img src="src/ventoso.jpg" alt="Imagen de clima ventoso">
+    Ventoso
+  </button>
+    <button class="btn-playlist" data-playlist="Frio/Nieve">
+    <img src="src/nieve.jpg" alt="Imagen de dia frio y nevado">
+    Frio/Nieve
+  </button>
+   
+
+    <div id="contenedor-imagen">
+        </div>
+    
+    <div id="contenedor-playlist">
+        </div>
+
+    <script src="main.js"></script> </body>
+
+    <audio id="audioplayer" controls></audio>
       <div>
         <button onclick="playPrev()">⏮️ Anterior</button>
         <button onclick="playNext()">⏭️ Siguiente</button>

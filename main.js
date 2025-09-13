@@ -1,30 +1,33 @@
-// const cambiarImagen = nombreLista => {
-//   const imagen = document.getElementById("imagenDePlaylist");
 
-  
-//   const rutasImg = {
-//     tormenta: "src/tormenta",
-//     soleado: "src/soleado.jpg",
-//     ventoso: "src/ventoso.jpg",
-//     nieveFrio: "src/nieve.jpg"
-//   };
-  
-//   imagen.src = rutasImg[nombreLista] || "img/default.jpg";
-// };
 
-// const valorbtn = document.getElementById("btnPLaylist").value;
+let botones = document.querySelectorAll(".btn-playlist"); // Manoteamos todos los botones
 
-let btnPLaylist = document.getElementById("btnPlaylist").addEventListener("click" , ()=> {
-        switch(btnPLaylist){
-          //corregir como se agarra el valor
-          case  btnPLaylist.value("lluvioso"): console.log("cargando lista lluvia")
-          break;
 
+botones.forEach(boton => {  /*recorremos todos los botones y les ponemos el listener*/
+    boton.addEventListener("click", (evento) => {
+        // Obtenemos el valor del atributo 'data-playlist' del botón clickeado
+        let playlist = evento.currentTarget.dataset.playlist;
+
+        switch (playlist) {
+            case "Lluvioso":
+                console.log("Cargando lista sugerida para dias de lluvia...");
+                
+                break;
+            case "Soleado":
+                console.log("Cargando lista sugerida para dias Soleados...");
+                
+                break;
+            case "Ventoso":
+                console.log("CCargando lista sugerida para dias Ventosos...");
+                
+                break;
+            case "Frio/Nieve":
+                console.log("Cargando lista sugerida para dias de Frio / Nieve......");
+                
+                break;
+            default:
+                console.log("No se encontró una playlist para el botón.");
+                break;
         }
-            // btn.value === lluvioso => lleve a la playlist y muestre la imagen correspondiente
-        }) 
-
-/* funcion para elegir la imagen 
-let imagenReproducor = document.getElementById("imagen") =()=>{
-
-} */
+    });
+});
