@@ -6,7 +6,8 @@ let botones = document.querySelectorAll(".btn-playlist"); // Manoteamos todos lo
 botones.forEach(boton => {  /*recorremos todos los botones y les ponemos el listener*/
     boton.addEventListener("click", (evento) => {
         // Obtenemos el valor del atributo 'data-playlist' del botón clickeado
-        let playlist = evento.currentTarget.dataset.playlist;
+        let playlist = evento.currentTarget.dataset.playlist; // con el current tomamos el valor que tiene el boton y no la imagen que lo acompaña!
+        //esto es lo q nos fallaba, nos agarraba el valor de la imagen que acompañaba al boton y seteaba como null
 
         switch (playlist) {
             case "Lluvioso":
