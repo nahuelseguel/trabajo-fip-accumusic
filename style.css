@@ -1,7 +1,90 @@
 h1{
-  background-color: chocolate;
+  background-color: lab(72.63% -5.75 -40.66);
   text-align: center;
 }
 footer{
-  background-color: rgb(165, 165, 230);
+  background-color: lab(72.63% -5.75 -40.66);
+  text-align: center;
 }
+ /* Contenedor de botones contenedor de los botones*/
+    #contenedor-imagen {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Estilos de los botones, tamaño, hoover y sombras */
+    .btn-playlist {
+      display: flex;   /*activo el flex */
+      flex-direction: column;  /* direccion en columnas*/
+      align-items: center; /* Alineacion central*/
+      width: 400px;
+      padding: 15px;
+      background-color: rgb(182, 206, 241);
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+      cursor: pointer;
+      transition: all 0.7s ease;
+      text-align: center;
+    }
+
+    .btn-playlist:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 1.3);
+      background-color: #f0f0f0;
+    }
+
+    .btn-playlist img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .btn-playlist:focus {
+      outline: none;
+      box-shadow: 0 0 0 5px rgba(110, 142, 251, 0.5);
+    }
+
+    /* Controlador musical */
+    #controladorMusical {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 500px;
+      background-color:rgb(182, 206, 241);  /* Color del fondo del contenedor Musical*/
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    #audioplayer {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    #controladorMusical div {
+      display: flex;
+      gap: 15px;
+    }
+
+    #controladorMusical button {
+      padding: 10px 15px;
+      background-color: #4962b4; /* Color del fondo de los botones Anterior y siguiente del reproductor Musical*/
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #controladorMusical button:hover {
+      background-color: #041d67;
+    }
