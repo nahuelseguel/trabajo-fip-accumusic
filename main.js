@@ -2,9 +2,47 @@ let botones = document.querySelectorAll(".btn-playlist");
 const reproductor = document.getElementById('audioplayer');
 
 // La lista de música debe estar fuera del bucle para que se pueda usar.
-const musicaFrio = ['src/frio/Ed Sheeran - Perfect (Official Music Video).mp3'];
-const musicaTormenta = ['src/lluvia/Guns N Roses - November Rain.mp3']
 
+const musicaTormenta = [
+    'src/lluvia/Guns N Roses - November Rain.mp3',
+    'src/lluvia/Adele - Rolling in the Deep (Official Music Video).mp3',
+    'src/lluvia/Amy Winehouse - Back To Black.mp3',
+    'src/lluvia/Billie Eilish - Happier Than Ever (Official Music Video).mp3',
+    'src/lluvia/Héroes del Silencio - Entre dos tierras (videoclip oficial).mp3',
+    'src/lluvia/Metallica_ Nothing Else Matters (Official Music Video).mp3',
+    'src/lluvia/Mujer Amante.mp3',
+];
+
+const musicaSoleado = [
+    "src/frio/Guns N' Roses - Paradise City (Official Music Video).mp3",
+    'src/frio/INXS - Suicide Blonde (Official Music Video).mp3',
+    'src/frio/La Renga - La razón que te demora, Detonador de sueños.mp3',
+    'src/frio/Michael Jackson - Smooth Criminal (Official Video).mp3',
+    'src/frio/Mike Tyson - Till I Collapse (Eminem)  BoxinLegends.mp3',
+    'src/frio/NSYNC - Bye Bye Bye (Official Video).mp3',
+    'src/frio/The White Stripes - Seven Nation Army (Official Music Video).mp3',
+];
+
+const musicaVentoso = [
+    `src/viento/Airbag - Y si te vas.mp3`,
+    `src/viento/Alanis Morissette - Ironic (Official 4K Music Video).mp3`,
+    `src/viento/Arctic Monkeys - Do I Wanna Know_ (Official Video).mp3`,
+    `src/viento/Avril Lavigne - Complicated (Official Video).mp3`,
+    `src/viento/Gotye - Somebody That I Used To Know (feat. Kimbra) [Official Music Video].mp3`,
+    `src/viento/Hoobastank - The Reason (Official Music Video).mp3`,
+    `src/viento/Nelly Furtado - I'm Like A Bird (Official Music Video).mp3`,
+];
+
+const musicaFrio = [
+    'src/frio/Ed Sheeran - Perfect (Official Music Video).mp3',
+    'src/frio/David Kushner - Daylight (Official Music Video).mp3',
+    'src/frio/Johnny Cash - Hurt.mp3',
+    'src/frio/Sia - Chandelier (Official Video).mp3',
+    'src/frio/Teddy Swims - Lose Control (The Village Sessions).mp3',
+    'src/frio/The Cranberries - Linger (Official Music Video).mp3',
+    'src/frio/twenty one pilots_ Stressed Out [OFFICIAL VIDEO].mp3',
+
+];
 
 let listaActualDeCanciones = [];
 let indiceCancionActual = 0;
@@ -76,9 +114,11 @@ botones.forEach(boton => {
                 break;
             case "Soleado":
                 console.log("Cargando lista sugerida para días Soleados...");
+                cargarMusica(musicaSoleado);
                 break;
             case "Ventoso":
                 console.log("Cargando lista sugerida para días Ventosos...");
+                cargarMusica(musicaVentoso);
                 break;
             case "Frio/Nieve":
                 console.log("Cargando lista sugerida para días de Frío / Nieve...");
