@@ -139,7 +139,7 @@ let temas = document.getElementById("temas");
 
 let agregar = document.getElementById("agregarLista").addEventListener("click", () => {
   let valorInput = document.getElementById("inputAdd").value;
-  if (arrLista.length < maxCanciones) {
+  if (arrLista.length < maxCanciones && valorInput != ``) {
     arrLista.push(valorInput);
     mostrarLista();
   }
@@ -147,7 +147,7 @@ let agregar = document.getElementById("agregarLista").addEventListener("click", 
 );
 
 function mostrarLista() {
-  temas.innerHTML = ""
+  temas.innerHTML = "";
   let cleanInput = document.getElementById("inputAdd");
   cleanInput.value = ``;
 
