@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>trabajo fip accuamusic</title>
 </head>
+
 <body>
     <header>
         <h1>AccuMusic</h1>
     </header>
-
     <div id="contenedor-imagen">
         <button class="btn-playlist" data-playlist="Lluvioso">
             <img src="src/tormenta.jpg" alt="Imagen de tormenta">
             Lluvioso
         </button>
-
         <button class="btn-playlist" data-playlist="Soleado">
             <img src="src/soleado.jpg" alt="Imagen de clima soleado">
             Soleado
         </button>
-
         <button class="btn-playlist" data-playlist="Ventoso">
             <img src="src/ventoso.jpg" alt="Imagen de clima ventoso">
             Ventoso
         </button>
-
         <button class="btn-playlist" data-playlist="Frio/Nieve">
             <img src="src/nieve.jpg" alt="Imagen de dia frio y nevado" id="frio">
             Frio/Nieve
         </button>
     </div>
-
     <div id="contenedor-playlist"></div>
-
     <div id="controladorMusical">
         <audio id="audioplayer" controls></audio>
         <div>
@@ -42,9 +38,13 @@
             <button onclick="playNext()">⏭️ Siguiente</button>
         </div>
     </div>
-
+    <div id="listaAdd">
+        <ul id="temas"></ul>
+        <input id="inputAdd" type="text" placeholder="Agrega tu cancion">
+        <button id="agregarLista">Agregar</button>
+    </div>
     <footer>11/09/2025 derechos reservados: Bruno Arenzana, Juan Bayugar, Nahuel Seguel</footer>
-    
     <script src="main.js"></script>
 </body>
+
 </html>
