@@ -14,13 +14,13 @@ const musicaTormenta = [
 ];
 
 const musicaSoleado = [
-  "src/frio/Guns N' Roses - Paradise City (Official Music Video).mp3",
-  'src/frio/INXS - Suicide Blonde (Official Music Video).mp3',
-  'src/frio/La Renga - La razón que te demora, Detonador de sueños.mp3',
-  'src/frio/Michael Jackson - Smooth Criminal (Official Video).mp3',
-  'src/frio/Mike Tyson - Till I Collapse (Eminem)  BoxinLegends.mp3',
-  'src/frio/NSYNC - Bye Bye Bye (Official Video).mp3',
-  'src/frio/The White Stripes - Seven Nation Army (Official Music Video).mp3',
+  "src/soleado/Guns N' Roses - Paradise City (Official Music Video).mp3",
+  'src/soleado/INXS - Suicide Blonde (Official Music Video).mp3',
+  'src/soleado/La Renga - La razón que te demora, Detonador de sueños.mp3',
+  'src/soleado/Michael Jackson - Smooth Criminal (Official Video).mp3',
+  'src/soleado/Mike Tyson - Till I Collapse (Eminem)  BoxinLegends.mp3',
+  'src/soleado/NSYNC - Bye Bye Bye (Official Video).mp3',
+  'src/soleado/The White Stripes - Seven Nation Army (Official Music Video).mp3',
 ];
 
 const musicaVentoso = [
