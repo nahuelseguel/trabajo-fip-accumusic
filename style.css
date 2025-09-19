@@ -17,7 +17,12 @@ footer {
   bottom: 0;
   left: 0;
 }
-
+.temas{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 /* Contenedor de botones contenedor de los botones*/
 #contenedor-imagen {
   display: flex;
@@ -29,8 +34,9 @@ footer {
   padding: 0 20px;
 }
 
+
 /* Estilos de los botones, tamaño, hoover y sombras */
-.btn-playlist {
+.btn-playlist , .listaAdd{
   display: flex;
   /*activo el flex */
   flex-direction: column;

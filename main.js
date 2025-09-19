@@ -158,13 +158,25 @@ function mostrarLista() {
     let btnModificar = document.createElement("button");
     btnModificar.textContent = "Modificar";
 
+    btnModificar.addEventListener("click", () => {
+      let nuevoValor = prompt("Introduce el nuevo valor:", arrLista[i]);
+      if (nuevoValor !== null && nuevoValor !== "") {
+        arrLista[i] = nuevoValor;
+        mostrarLista();
+      }
+
+    });
+
     let btnEliminar = document.createElement("button");
     btnEliminar.textContent = "Eliminar";
+    btnEliminar.addEventListener("click", () => {
+      arrLista.splice(i, 1);
+      mostrarLista();
+    });
+    temas.appendChild(li);
 
     li.appendChild(btnModificar);
     li.appendChild(btnEliminar);
-
-    temas.appendChild(li);
   }
 }
 
