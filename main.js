@@ -14,13 +14,13 @@ const musicaTormenta = [
 ];
 
 const musicaSoleado = [
-  "src/frio/Guns N' Roses - Paradise City (Official Music Video).mp3",
-  'src/frio/INXS - Suicide Blonde (Official Music Video).mp3',
-  'src/frio/La Renga - La razón que te demora, Detonador de sueños.mp3',
-  'src/frio/Michael Jackson - Smooth Criminal (Official Video).mp3',
-  'src/frio/Mike Tyson - Till I Collapse (Eminem)  BoxinLegends.mp3',
-  'src/frio/NSYNC - Bye Bye Bye (Official Video).mp3',
-  'src/frio/The White Stripes - Seven Nation Army (Official Music Video).mp3',
+  "src/soleado/Guns N' Roses - Paradise City (Official Music Video).mp3",
+  'src/soleado/INXS - Suicide Blonde (Official Music Video).mp3',
+  'src/soleado/La Renga - La razón que te demora, Detonador de sueños.mp3',
+  'src/soleado/Michael Jackson - Smooth Criminal (Official Video).mp3',
+  'src/soleado/Mike Tyson - Till I Collapse (Eminem)  BoxinLegends.mp3',
+  'src/soleado/NSYNC - Bye Bye Bye (Official Video).mp3',
+  'src/soleado/The White Stripes - Seven Nation Army (Official Music Video).mp3',
 ];
 
 const musicaVentoso = [
@@ -114,7 +114,7 @@ botones.forEach(boton => {
         break;
       case "Soleado":
         console.log("Cargando lista sugerida para días Soleados...");
-        cargarMusica(musicaSoleado);
+        cargarMusica(musicaSoleado);0
         break;
       case "Ventoso":
         console.log("Cargando lista sugerida para días Ventosos...");
@@ -147,7 +147,7 @@ let agregar = document.getElementById("agregarLista").addEventListener("click", 
 );
 
 function mostrarLista() {
-  temas.innerHTML = ""
+  temas.innerHTML = "";
   let cleanInput = document.getElementById("inputAdd");
   cleanInput.value = ``;
 
@@ -164,7 +164,6 @@ function mostrarLista() {
         arrLista[i] = nuevoValor;
         mostrarLista();
       }
-
     });
 
     let btnEliminar = document.createElement("button");
@@ -173,11 +172,18 @@ function mostrarLista() {
       arrLista.splice(i, 1);
       mostrarLista();
     });
+    
     temas.appendChild(li);
-
     li.appendChild(btnModificar);
     li.appendChild(btnEliminar);
   }
 }
-
+function borrarLista(){
+    document.getElementById("btncleanli").addEventListener("click", () => {    //aca quedo la funcion echa, tomamos el click, llevamos el arreglo a 0 items y mostramos la lista del arreglo (ya con 0 items) 
+        arrLista.length = 0;
+        mostrarLista();
+        alert("La lista ha sido eliminada: ", arrLista);
+    });
+}
+borrarLista();
 //---------------------------------------------------------

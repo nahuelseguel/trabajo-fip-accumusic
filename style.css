@@ -1,12 +1,22 @@
 body {
-  background-color: rgb(51, 49, 49);
+   background-color: #2E2E2E;
+  color: #F5F5DC;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+
+
 }
 
 h1 {
-  background-color: lab(83.34% -1.65 -5.62);
-  color: #1d295f;
+  background-color: lab(16.73% -1.43 -15.32);
+  color: #9baaec;
   text-align: center;
   border-radius: 50px;
+}
+h1, h2, h3 {
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
 footer {
@@ -14,7 +24,7 @@ footer {
   width: 100%;
   background-color: lab(43.96% -4.42 -12.32);
   text-align: center;
-  bottom: 0;
+  bottom: 0; /* bottom 0 --------------------------------------------*/
   left: 0;
 }
 .temas{
@@ -33,8 +43,22 @@ footer {
   margin: 0 auto;
   padding: 0 20px;
 }
+#listaAdd{
+   text-align: center;
+  margin: 20px auto; /* Esto centra horizontalmente */
+  color: white;
+  border: 9px dotted rgb(22, 53, 75);
+
+  width: 320px;
+  height: 320px;
 
 
+} 
+.temas{
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
 /* Estilos de los botones, tamaño, hoover y sombras */
 .btn-playlist , .listaAdd{
   display: flex;
@@ -110,4 +134,39 @@ footer {
 
 #controladorMusical button:hover {
   background-color: #041d67;
+}
+
+#about {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+
+}
+
+#about:hover {
+  background-color: #2980b9;
+}
+
+#volver{
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
 }
