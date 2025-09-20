@@ -179,5 +179,3 @@ function mostrarLista() {
     li.appendChild(btnEliminar);
   }
 }
-
-//---------------------------------------------------------
