@@ -157,6 +157,7 @@ function mostrarLista() {
 
     let btnModificar = document.createElement("button");
     btnModificar.textContent = "Modificar";
+    btnModificar.classList.add("btn-modificar");
 
     btnModificar.addEventListener("click", () => {
       let nuevoValor = prompt("Introduce el nuevo valor:", arrLista[i]);
@@ -168,6 +169,7 @@ function mostrarLista() {
 
     let btnEliminar = document.createElement("button");
     btnEliminar.textContent = "Eliminar";
+    btnEliminar.classList.add("btn-eliminar");
     btnEliminar.addEventListener("click", () => {
       arrLista.splice(i, 1);
       mostrarLista();
