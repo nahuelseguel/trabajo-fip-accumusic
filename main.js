@@ -139,7 +139,10 @@ let temas = document.getElementById("temas");
 
 let agregar = document.getElementById("agregarLista").addEventListener("click", () => {
   let valorInput = document.getElementById("inputAdd").value;
-  if (arrLista.length < maxCanciones && valorInput != ``) {
+   if (valorInput === "") { 
+    alert("No puedes ingresar una sugerencia Vacia");    /**  <---------------LE METI ESTE IF PARA VALIDAR QUE EL INPUT NO ESTE VACIO. */
+    return; }
+  if (arrLista.length < maxCanciones && valorInput != ``) {   
     arrLista.push(valorInput);
     mostrarLista();
   }
