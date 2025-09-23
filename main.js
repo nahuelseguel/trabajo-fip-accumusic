@@ -114,7 +114,7 @@ botones.forEach(boton => {
         break;
       case "Soleado":
         console.log("Cargando lista sugerida para días Soleados...");
-        cargarMusica(musicaSoleado);0
+        cargarMusica(musicaSoleado); 0
         break;
       case "Ventoso":
         console.log("Cargando lista sugerida para días Ventosos...");
@@ -139,10 +139,11 @@ let temas = document.getElementById("temas");
 
 let agregar = document.getElementById("agregarLista").addEventListener("click", () => {
   let valorInput = document.getElementById("inputAdd").value;
-   if (valorInput === "") { 
+  if (valorInput === "") {
     alert("No puedes ingresar una sugerencia Vacia");    /**  <---------------LE METI ESTE IF PARA VALIDAR QUE EL INPUT NO ESTE VACIO. */
-    return; }
-  if (arrLista.length < maxCanciones && valorInput != ``) {   
+    return;
+  }
+  if (arrLista.length < maxCanciones && valorInput != ``) {
     arrLista.push(valorInput);
     mostrarLista();
   }
@@ -177,18 +178,18 @@ function mostrarLista() {
       arrLista.splice(i, 1);
       mostrarLista();
     });
-    
+
     temas.appendChild(li);
     li.appendChild(btnModificar);
     li.appendChild(btnEliminar);
   }
 }
-function borrarLista(){
-    document.getElementById("btncleanli").addEventListener("click", () => {    //aca quedo la funcion echa, tomamos el click, llevamos el arreglo a 0 items y mostramos la lista del arreglo (ya con 0 items) 
-        arrLista.length = 0;
-        mostrarLista();
-        alert("La lista ha sido eliminada: ", arrLista);
-    });
+function borrarLista() {
+  document.getElementById("btncleanli").addEventListener("click", () => {
+    arrLista.length = 0;
+    mostrarLista();
+    alert("La lista ha sido eliminada: ", arrLista);
+  });
 }
 borrarLista();
 //---------------------------------------------------------

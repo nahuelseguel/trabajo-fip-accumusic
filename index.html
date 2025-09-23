@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>trabajo fip accuamusic</title>
 </head>
-
 <body>
     <header>
         <h1>AccuMusic</h1>
     </header>
-    <div id="contenedor-imagen">
-        <button class="btn-playlist" data-playlist="Lluvioso">
-            <img src="src/tormenta.jpg" alt="Imagen de tormenta">
+    <div id="content">
+        <div id="listaAdd">
+            <button id="btncleanli">Borrar lista</button>
+            <ul ul style="list-style-type: none;" id="temas"></ul>
+            <input id="inputAdd" type="text" placeholder="Agrega tu cancion">
+            <button id="agregarLista">Agregar</button>
+        </div>
+        <div id="contenedor-imagen">
+            <button class="btn-playlist" data-playlist="Lluvioso">
+                <img src="src/tormenta.jpg" alt="Imagen de tormenta">
             Lluvioso
         </button>
         <button class="btn-playlist" data-playlist="Soleado">
@@ -30,6 +35,7 @@
             Frio/Nieve
         </button>
     </div>
+</div>
     <div id="contenedor-playlist"></div>
     <div id="controladorMusical">
         <audio id="audioplayer" controls></audio>
@@ -38,22 +44,10 @@
             <button onclick="playNext()">⏭️ Siguiente</button>
         </div>
     </div>
-    <div id="listaAdd">
-        <button id="btncleanli">Borrar lista</button>
-        <ul ul style="list-style-type: none;" id="temas"></ul>
-        <input id="inputAdd" type="text" placeholder="Agrega tu cancion">
-        <button id="agregarLista">Agregar</button>
-    </div>
-
-
     <a href="aboutus.html">
-    <button id="about">About Us</button>
+        <button id="about">About Us</button>
     </a>
-
-
     <footer>11/09/2025 derechos reservados: Bruno Arenzana, Juan Bayugar, Nahuel Seguel</footer>
     <script src="main.js"></script>
-
-
 </body>
 </html>
