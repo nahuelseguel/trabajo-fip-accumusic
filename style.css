@@ -1,24 +1,10 @@
 body {
   background-color: #2E2E2E;
-  color: #F5F5DC;
   font-family: 'Segoe UI', sans-serif;
-  height: 100%;
   margin: 0;
-  padding: 0;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  min-height: 100vh;
-}
-
-.main-content {
-  flex: 1;
-}
-
-#content{
+#content {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
@@ -31,9 +17,11 @@ h1 {
   border-radius: 50px;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 #listaAdd {
@@ -47,18 +35,23 @@ h1,h2,h3 {
   height: 350px;
   min-height: 350px;
   min-width: 260px;
-  width: 260px; 
+  width: 260px;
   transition: opacity 0.3s ease;
   z-index: 1000;
-  overflow: hidden;            /* Oculta el contenido que se desborda */
+  overflow: hidden;
+  /* Oculta el contenido que se desborda */
 }
 
 #listaAdd:hover {
-  opacity: 1;                  /* Se muestra al pasar el mouse */
-  pointer-events: auto;       /* Ahora sí permite interacción */
-  height: auto;               /* Se agranda al pasar el mouse */
-  width: auto; 
-  overflow: auto;              /* Permite ver el contenido completo */
+  opacity: 1;
+  /* Se muestra al pasar el mouse */
+  pointer-events: auto;
+  /* Ahora sí permite interacción */
+  height: auto;
+  /* Se agranda al pasar el mouse */
+  width: auto;
+  overflow: auto;
+  /* Permite ver el contenido completo */
 }
 
 #temas {
@@ -75,15 +68,17 @@ h1,h2,h3 {
 #contenedor-imagen {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;     /* Centra los elementos horizontalmente */
+  justify-content: center;
+  /* Centra los elementos horizontalmente */
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-#contenedor-imagen > div {
-  flex: 0 0 calc(50% - 20px);  /* Ocupa la mitad del ancho menos el gap */
+#contenedor-imagen>div {
+  flex: 0 0 calc(50% - 20px);
+  /* Ocupa la mitad del ancho menos el gap */
   box-sizing: border-box;
 }
 
@@ -138,9 +133,9 @@ h1,h2,h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px auto;
+  margin: 23px auto;
   padding: 20px;
-  max-width: 500px;
+  max-width: 400px;
   background-color: rgb(37, 93, 177);
   /* Color del fondo del contenedor Musical*/
   border-radius: 12px;
@@ -152,14 +147,8 @@ h1,h2,h3 {
   margin-bottom: 15px;
 }
 
-#controladorMusical div {
-  display: flex;
-  gap: 15px;
-}
-
 #controladorMusical button {
   padding: 10px 15px;
-  height: 20px;
   background-color: #4962b4;
   /* Color del fondo de los botones Anterior y siguiente del reproductor Musical*/
   color: white;
@@ -183,7 +172,7 @@ h1,h2,h3 {
   cursor: pointer;
   transition: background-color 0.3s ease;
   position: fixed;
-  bottom: 20px;
+  bottom: 40px;
   right: 20px;
 }
 
@@ -229,7 +218,6 @@ h1,h2,h3 {
 .btn-eliminar {
   background-color: #dc3545;
   color: white;
-  
 }
 
 .btn-eliminar:hover {
@@ -239,7 +227,6 @@ h1,h2,h3 {
 }
 
 #agregarLista {
-  
   background-color: #28a745;
   color: white;
   padding: 8px 16px;
@@ -270,28 +257,28 @@ h1,h2,h3 {
 }
 
 #btncleanli:hover {
-    background-color: #c82333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-    }
-
+  background-color: #c82333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
 
 li {
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 10px;
-  }
+}
 
-.titulo-AccuMusic{
-  text-align:left;
+.titulo-AccuMusic {
+  text-align: left;
   padding-left: 81%;
-  }
+}
 
-.titulo-AboutUs{
+.titulo-AboutUs {
+  color: white;
   font-size: 27px;
   text-align: center;
-  }
+}
 
 .parrafo-aboutUs {
   text-align: center;
@@ -310,10 +297,9 @@ li {
 }
 
 footer {
+  position: absolute;
   width: 100%;
   background-color: lab(38.9% -3.7 -8.41);
   text-align: center;
-  padding: 4px;
   bottom: 0;
-  left: 0;
 }

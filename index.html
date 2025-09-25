@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,38 @@
     <title>trabajo fip accuamusic</title>
 </head>
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
 <body>
 
     <header>
         <h1>AccuMusic</h1>
     </header>
-
-     <div class="wrapper">
-      <div class="main-content">
-       <div id="content">
+    <div id="content">
         <div id="listaAdd">
             <button id="btncleanli">Borrar lista</button>
             <ul ul style="list-style-type: none;" id="temas"></ul>
             <input id="inputAdd" type="text" placeholder="Agrega tu cancion">
             <button id="agregarLista">Agregar</button>
         </div>
-
         <div id="contenedor-imagen">
             <button class="btn-playlist" data-playlist="Lluvioso">
                 <img src="src/tormenta.jpg" alt="Imagen de tormenta">
-            Lluvioso
-        </button>
-        <button class="btn-playlist" data-playlist="Soleado">
-            <img src="src/soleado.jpg" alt="Imagen de clima soleado">
-            Soleado
-        </button>
-        <button class="btn-playlist" data-playlist="Ventoso">
-            <img src="src/ventoso.jpg" alt="Imagen de clima ventoso">
-            Ventoso
-        </button>
-        <button class="btn-playlist" data-playlist="Frio/Nieve">
-            <img src="src/nieve.jpg" alt="Imagen de dia frio y nevado" id="frio">
-            Frio/Nieve
-        </button>
-         </div>
-
-     </div>
-
+                Lluvioso
+            </button>
+            <button class="btn-playlist" data-playlist="Soleado">
+                <img src="src/soleado.jpg" alt="Imagen de clima soleado">
+                Soleado
+            </button>
+            <button class="btn-playlist" data-playlist="Ventoso">
+                <img src="src/ventoso.jpg" alt="Imagen de clima ventoso">
+                Ventoso
+            </button>
+            <button class="btn-playlist" data-playlist="Frio/Nieve">
+                <img src="src/nieve.jpg" alt="Imagen de dia frio y nevado" id="frio">
+                Frio/Nieve
+            </button>
+        </div>
+    </div>
     <div id="contenedor-playlist"></div>
     <div id="controladorMusical">
         <audio id="audioplayer" controls></audio>
@@ -51,14 +47,12 @@
             <button onclick="playPrev()">⏮️ Anterior</button>
             <button onclick="playNext()">⏭️ Siguiente</button>
         </div>
-         </div>
-
+    </div>
     <a href="aboutus.html">
         <button id="about">About Us</button>
     </a>
     <footer>11/09/2025 derechos reservados: Bruno Arenzana, Juan Bayugar, Nahuel Seguel</footer>
-    </div>
-    </div>
     <script src="main.js"></script>
 </body>
+
 </html>
