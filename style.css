@@ -37,14 +37,28 @@ h1,h2,h3 {
 }
 
 #listaAdd {
+  position: absolute;
   text-align: center;
   padding: 20px;
   margin-left: 20px;
   margin-top: 10px;
   background-color: lab(16.73% -1.43 -15.32);
   border: 9px dotted rgb(22, 53, 75);
-  overflow: auto;
-  height: 400px;
+  height: 350px;
+  min-height: 350px;
+  min-width: 260px;
+  width: 260px; 
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+  overflow: hidden;            /* Oculta el contenido que se desborda */
+}
+
+#listaAdd:hover {
+  opacity: 1;                  /* Se muestra al pasar el mouse */
+  pointer-events: auto;       /* Ahora sí permite interacción */
+  height: auto;               /* Se agranda al pasar el mouse */
+  width: auto; 
+  overflow: auto;              /* Permite ver el contenido completo */
 }
 
 #temas {
@@ -60,12 +74,17 @@ h1,h2,h3 {
 
 #contenedor-imagen {
   display: flex;
-  margin-left: 100px;
-  gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;     /* Centra los elementos horizontalmente */
+  gap: 20px;
   max-width: 1200px;
+  margin: 0 auto;
   padding: 0 20px;
-  margin-right: 100px;
+}
+
+#contenedor-imagen > div {
+  flex: 0 0 calc(50% - 20px);  /* Ocupa la mitad del ancho menos el gap */
+  box-sizing: border-box;
 }
 
 .temas {
@@ -220,6 +239,7 @@ h1,h2,h3 {
 }
 
 #agregarLista {
+  
   background-color: #28a745;
   color: white;
   padding: 8px 16px;
